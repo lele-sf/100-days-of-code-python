@@ -19,7 +19,9 @@ while "_" in display:
                     display[index] = letter
         else:
             lives -= 1
-            print(f"You guessed the letter {guess}, that's not in the word. You lose a life.")
+            print(
+                f"You guessed the letter {guess}, that's not in the word. You lose a life."
+            )
             print(stages[lives])
             if lives == 0:
                 print("You lose!")

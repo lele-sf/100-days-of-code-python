@@ -15,11 +15,11 @@ def calculate(num_one, num_two, operation):
     return result
 
 
-continue_calc = 'y'
+continue_calc = "y"
 print(logo)
 num_one = float(input("What's the first number?: "))
 
-while continue_calc == 'y':
+while continue_calc == "y":
     print("+\n-\n*\n/")
     operation = input("Pick an operation: ")
     if operation not in ["+", "-", "*", "/"]:
@@ -28,6 +28,8 @@ while continue_calc == 'y':
     num_two = float(input("What's the next number?: "))
     result = calculate(num_one, num_two, operation)
     print(f"{num_one} {operation} {num_two} = {result}")
-    continue_calc = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation: ")
-    if continue_calc == 'y':
+    continue_calc = input(
+        f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation: "
+    )
+    if continue_calc == "y":
         num_one = result

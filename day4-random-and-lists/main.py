@@ -30,14 +30,16 @@ scissors = """
 game_images = [rock, paper, scissors]
 
 while True:
-    choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+    choice = int(
+        input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+    )
     if choice < 0 or choice > 2:
         print("Invalid input. You must enter 0, 1, or 2.")
         continue
     break
 
 random_choice = random.randint(0, 2)
-outcome = ''
+outcome = ""
 
 if choice == random_choice:
     outcome = "Draw!"

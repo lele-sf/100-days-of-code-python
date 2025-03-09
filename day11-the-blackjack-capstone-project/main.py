@@ -17,7 +17,7 @@ def calculate_score(cards):
 
 
 play_game = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
-if play_game == 'y':
+if play_game == "y":
     print(logo)
 
 while play_game == "y":
